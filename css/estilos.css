@@ -1,0 +1,891 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt@-10..0&display=swap');
+
+.container {
+  width: 100%; 
+  max-width: 100%;  
+  margin: 0;
+  grid-template:auto; 
+/* grid area en cada elemento */
+}
+
+.contenido-principal {
+  padding: 20px;
+  padding-left: 72px; 
+  padding-right: 72px;
+  grid-template:auto; 
+}
+
+body {
+  background-color: #121518;
+  font-size: 16px;
+  margin: 0; 
+}
+
+/*////////////////// H2 diseños /////////////*/
+
+h2.beneficiotitulo{
+  position: relative; /* Establece la posición relativa para que la línea se posicione con respecto a este */
+  font-family: 'Archivo', ExtraBold;
+  font-weight: 800;
+  font-size: 36px !important;
+  color: #ffffff;
+  text-align: left;
+  display: inline-block;
+  margin: 0; /* Modificar el margen vertical según sea necesario */
+  margin-bottom: 16px;
+}
+
+h2.beneficiotitulo::after {
+  content: ''; 
+  position: absolute; 
+  bottom: -2px; /* Coloca la línea justo debajo del texto */
+  left: 0; /* Alinea la línea con el borde izquierdo  */
+  width: 250px; /* Ancho de la línea */
+  height: 2px; /* Grosor de la línea */
+  background-color: #17D0F9; 
+}
+
+h2.cinetitulo{
+  position: relative; /* Establece la posición relativa para que la línea se posicione con respecto a este */
+  font-family: 'Archivo', ExtraBold;
+  font-weight: 800;
+  font-size: 36px !important;
+  color: #ffffff;
+  text-align: left;
+  display: inline-block;
+  margin: 0; 
+  margin-bottom: 16px;
+}
+
+h2.cinetitulo::after {
+  content: ''; /* Agrega contenido pseudo-elemento */
+  position: absolute; 
+  bottom: -2px; 
+  left: 0; 
+  width: 388px; /* Ancho de la línea */
+  height: 2px; /* Grosor de la línea */
+  background-color: #17D0F9; 
+}
+
+h2.entrevistatitulo{
+  position: relative; 
+  font-family: 'Archivo', ExtraBold;
+  font-weight: 800;
+  font-size: 36px !important;
+  color: #ffffff;
+  text-align: left;
+  display: inline-block;
+  margin: 0; 
+  margin-bottom: 16px;
+}
+
+h2.entrevistatitulo::after {
+  content: ''; 
+  position: absolute; 
+  bottom: -2px; 
+  left: 0; 
+  width: 548px; 
+  height: 2px;
+  background-color: #17D0F9; 
+}
+
+h2.valoraciontitulo{
+  position: relative; 
+  font-family: 'Archivo', ExtraBold;
+  font-weight: 800;
+  font-size: 36px !important;
+  color: #ffffff;
+  text-align: left;
+  display: inline-block;
+  margin: 0; 
+  margin-bottom: 16px;
+}
+
+h2.valoraciontitulo::after {
+  content: ''; 
+  position: absolute;
+  bottom: -2px; 
+  left: 0; 
+  width: 320px; 
+  height: 2px; 
+  background-color: #17D0F9; 
+}
+/*CARD 1*/
+
+/*CARD2*/
+/*
+h2.card1titulo,
+h2.card2titulo,
+h2.card3titulo,
+h2.card4titulo {
+  position: relative; *//* Establece la posición relativa para que la línea se posicione con respecto a este */
+  /*font-family: 'Archivo', ExtraBold;
+  font-weight: 800;
+  font-size: 26px !important;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  margin: 0; */ /* Modificar el margen vertical según sea necesario */
+ /* margin-bottom: 6px;
+}
+
+h2.card1titulo::after, 
+h2.card2titulo::after {
+  content: ''; *//* Agrega contenido pseudo-elemento */
+  /*position: absolute;*/ /* Establece la posición absoluta */
+ /* bottom: -2px; *//* Coloca la línea justo debajo del texto */
+ /* width: 200px; *//* Ancho de la línea */
+ /* height: 2px; *//* Grosor de la línea */
+ /* background-color: #17D0F9; *//* Color de la línea 
+}*/
+
+
+/*CARD 3*/
+
+/*CARD 4*/
+/*h2.card3titulo::after,
+h2.card4titulo::after  {
+  content: ''; *//* Agrega contenido pseudo-elemento */
+ /* position: absolute;*/ /* Establece la posición absoluta */
+ /* bottom: -2px;
+  left: 0; 
+  width: 220px; 
+  height: 2px; 
+  background-color: #17D0F9; 
+}*/
+
+/* letras */
+
+p {
+  font-family: 'inter';
+  text-align: left;
+  color: #ffffff;
+  font-size: 12px !important;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+a {
+
+  font-family: 'Archivo'; 
+  font-weight: 900; 
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+/* ////////////////////// */
+header {
+  margin: 0; 
+}
+
+.barra-navegacion {
+  background-color: #333; 
+  height: 60px; 
+  width: 100%; 
+  z-index: 1000; 
+  box-sizing: border-box;
+}
+
+
+.barra-navegacion .logo {
+  position: relative; 
+  top: 0; 
+  display: block; 
+  margin: 0 auto; 
+  margin-top: 0px; 
+  max-width: 120px;
+  max-height: 100%; 
+  padding: 10px; 
+}
+
+footer {
+  text-align: center; 
+  padding: 50px 0; 
+  width: 100%;
+}
+
+.logo-footer {
+  float: left; 
+  max-width: 100px; 
+  margin-right: 20px; 
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.imagenes-derecha-footer {
+  float: right; 
+}
+
+.imagenes-derecha-footer img {
+  width: 40px; 
+  margin: 0 10px;
+  transition: transform 0.3s ease; 
+}
+
+.imagenes-derecha-footer img:hover {
+  transform: scale(1.2); /* Agranda la imagen al pasar el mouse */
+}
+
+/* BANNER */
+/* BANNER */
+.banner {
+  background-image: url('../img/banner.png'); 
+  height: 100vh; 
+  background-size: cover; 
+  width: 100vw; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  margin: 0;
+  padding-left: 72px;
+}
+
+
+.banner-content {
+  max-width: 100%;
+}
+
+/* Estilos para pantallas medianas y pequeñas */
+@media screen and (max-width: 768px) {
+  .banner {
+    align-items: center; 
+    padding: 72px; 
+  }
+  
+  .contenido {
+    
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  
+  .boton-enterate {
+    margin-top: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+}
+
+/* Estilos dentro del banner */
+.contenido {
+  text-align: left; 
+  color: #ffffff; 
+  max-width: 100%; 
+}
+
+h1.enterate {
+  font-family: 'Archivo'; 
+  font-weight: 900;
+  color: #ffffff;
+  text-align: left;
+  font-size: min(5vw, 38px); /* Tamaño de fuente relativo limitado a 38px o 5vw */
+  margin: 0;
+  margin-bottom: min(2vw, 32px); /* Margen inferior relativo limitado a 32px o 2vw */
+  margin-top: 0;
+}
+
+h1.enterate .enterate-texto {
+  color: rgba(0, 0, 0, 0.2); 
+  -webkit-text-stroke: 2px #17D0F9; 
+  -moz-text-stroke: 2px #17D0F9; 
+}
+
+h2.enterate {
+  font-family: 'Inter', Regular; 
+  font-weight: 400;
+  color: #ffffff;
+  text-align: left;
+  font-size: min(3vw, 21.3px); /* Tamaño de fuente relativo limitado a 21.3px o 3vw */
+  margin: min(2vw, 0) 0 min(4vw, 80px); /* Márgenes relativos limitados */
+  word-wrap: break-word; /* Permite que las palabras se rompan si exceden el ancho del contenedor */
+  max-width: calc(100% - 72px); /* Ancho máximo relativo al tamaño de la pantalla menos el padding izquierdo */
+}
+
+.sin-linea::after {
+  display: none;  
+}
+
+/* Estilos dentro del botón */
+.boton-enterate {
+  display: inline-block;
+  padding: min(2vw, 16px) min(6vw, 68px); /* Padding relativo limitado */
+  border: 2px solid #17D0F9; 
+  background-color: #17D0F91A;
+  color: #ffffff; 
+  text-decoration: none;
+  margin-top: min(2vw, 20px); /* Espacio entre el botón y los encabezados */
+}
+
+.boton-enterate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #17D0F9; 
+  opacity: 0.1; 
+  z-index: -1; 
+  transition: opacity 0.3s; 
+}
+
+.boton-enterate:hover::before {
+  opacity: 1; 
+}
+
+/* Estilos dentro del botón */
+.contenido-boton {
+  font-family: 'Archivo'; 
+  font-weight: 900; 
+  font-size: min(3vw, 20px); /* Tamaño de fuente relativo limitado a 20px o 3vw */
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+/* final banner */
+
+
+/* BENEFICIOS */
+
+.caja {
+  background-color: #121518; 
+  padding: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  margin-top: 20px; 
+  margin: 0;
+  min-height: 280px; 
+  margin-bottom: 72px;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.beneficios-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  gap: 20px; /* Espacio entre cada columna */
+}
+
+.beneficio {
+  width: calc(33.33% - 20px); /* Ancho de la columna con espacio entre ellas */
+  margin-top: 20px;
+  text-align: center; 
+}
+
+.beneficio img {
+  max-width: 40%; /* Reducir el tamaño de la imagen */
+  height: auto; 
+  margin-bottom: 16px;
+}
+
+.beneficio p {
+  color: #ffffff; 
+  font-family: 'Archivo';
+  font-weight: 800;
+  text-align: center;
+  font-size: 14px !important;
+  margin-top: 16px;
+}
+
+
+/* Estilos para tamaño celular */
+@media (max-width: 767px) {
+  .beneficios-container {
+    flex-direction: column; /* Cambiar la dirección a column para dispositivos móviles */
+    align-items: center;
+  }
+  
+  .beneficio {
+    width: 100%; /* Hacer que los elementos ocupen el ancho completo */
+  }
+}
+
+/* beneficios final */
+
+
+/* FORMULARIO */
+.checkboxes {
+  margin-left:0;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  color: #ffffff
+  
+}
+
+/* Estilo para ocultar el checkbox original */
+.checkboxes input[type="checkbox"] {
+  display: none; /* Oculta el checkbox original */
+}
+
+/* Estilo para crear un checkbox personalizado */
+.checkboxes input[type="checkbox"] + label {
+  position: relative; /* Para el label */
+  padding-left: 35px; /* Espacio a la izquierda para el nuevo checkbox */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el label */
+}
+
+/* Estilo para el nuevo checkbox personalizado */
+.checkboxes input[type="checkbox"] + label::before {
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 25px; /* Ancho del checkbox */
+  height: 25px; /* Altura del  checkbox */
+  background-color: #ffffff;
+}
+
+/* Estilo para la tilde del nuevo checkbox cuando está seleccionado */
+.checkboxes input[type="checkbox"]:checked + label::after {
+  content: "\2713"; /* Unicode para la tilde */
+  position: absolute; /* Establece la posición absoluta */
+  left: 5px; /* Ajusta la posición horizontal de la tilde */
+  top: -1px; /* Ajusta la posición vertical de la tilde */
+  font-size: 20px; /* Ajusta el tamaño de la tilde */
+  color: #17D0F9; /* Cambia el color de la tilde a celeste */
+}
+
+/* Estilo para las etiquetas de los checkbox */
+.checkboxes label {
+  margin-right: 20px;
+  font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+  color: #ffffff; /* Color del texto */
+}
+
+
+p.archivo-800 {
+  font-family: 'Archivo', ExtraBold; /* Utiliza la fuente Archivo */
+  font-weight: 800; /* Establece el peso de la fuente en 900 */
+  font-size: 20px !important; /* Cambia el tamaño de la fuente según sea necesario */
+  margin: 0;
+  margin-bottom: 6px;
+  margin-top: 32px;
+}
+
+/* Estilos para el botón deshabilitado */
+.boton-enterate.deshabilitado {
+  font-family: 'Archivo'; 
+  font-weight: 900; 
+  font-size: 20px !important;
+  pointer-events: none; /* Deshabilita los eventos de clic */
+  opacity: 0.5; /* Reduce la opacidad */
+  cursor: not-allowed; /* Cambia el cursor */
+  margin-top: 64px;
+}
+
+#nombreInput,
+#correoInput {
+  font-family: 'Archivo' , ExtraBold;
+  font-weight:  800;
+  color: #888888;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+  border-radius: 0;
+  width: 100%;
+  max-width: 960px;
+  box-sizing: border-box;
+}
+
+#nombreInput.active,
+#correoInput.active {
+  opacity: 1;
+  height: auto;
+  color: #000000;
+}
+
+/* FINAL FORMULARIO */
+
+
+/* CARRUSELES AUTO */
+
+/* Ajustar la altura del contenedor del carrusel */
+.carousel-item {
+  height: 380px; /* Ajusta la altura del contenedor del carrusel */
+  position: relative; /* Mantiene los elementos posicionados absolutamente dentro del contenedor */
+
+}
+
+/* Ajustar la altura y ancho de las imágenes dentro del carrusel */
+.carousel-item img {
+  height: 100%;
+  width: 100%; /* Mantiene la proporción de la imagen */
+  object-fit: contain; /* Asegura que la imagen cubra el contenedor */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+/* Ajustar el estilo del texto dentro del carrusel */
+.carousel-caption h5 {
+  font-size: 32px; /* Ajusta el tamaño de la fuente */
+  color: #ffffff; /* Cambia el color del texto */
+  padding: 10px; /* Añade relleno alrededor del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra al texto */
+  font-family: 'Archivo', ExtraBlack; 
+  font-weight: 800; 
+  text-align: left; /* Alinea el texto a la izquierda */
+  position: absolute;
+  bottom: 20px; /* Ajusta la posición desde el fondo */
+  left: 32px; /* Ajusta la posición desde la izquierda */
+  transform: translateX(0); /* Elimina cualquier traslación extra */
+  margin: 0; /* Elimina márgenes extra */
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  max-width: 80%; /* Ancho máximo del texto */
+  margin: auto; /* Centra horizontalmente */
+}
+
+.carousel-inner{
+  margin:0;
+  margin-bottom: 32px;
+  
+}
+
+.carousel-indicators{
+  margin-bottom: -20px;
+}
+
+/* Ajustar el contenedor de las imágenes */
+.carousel-item .d-flex {
+  height: 100%;
+  gap: 16px; /* Añadir espacio entre las imágenes */
+}
+
+/* FINAL CARRUSELES */
+
+
+/* CARRUSEL DRAG */
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: auto !important;
+  margin-right: 8px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Asegura que esté en la parte superior */
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 32px; 
+  height: 4px; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 0; 
+  margin: 0; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #FFFFFF; /* Color del indicador activo */
+  opacity: 1; /* Opacidad completa */
+}
+
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+  /* FINAL CARRUSEL DRAG*/
+
+/*//////////////////////*/
+
+/*FORMULARIO*/
+.formulario-container {
+  margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+
+}
+
+h2.formtitulo{
+  position: relative; /* Establece la posición relativa para que la línea se posicione con respecto a este */
+  font-family: 'Archivo', ExtraBold;
+  font-weight: 800;
+  font-size: 36px !important;
+  color: #ffffff;
+  text-align: left;
+  display: inline-block;
+  margin: 0; /* Modificar el margen vertical según sea necesario */
+  margin-bottom: 16px;
+}
+
+/*FINAL FORMULARIO*/
+
+
+
+/* P ESTILOS */
+p.formulariosub {
+  font-family: 'inter';
+  text-align: left;
+  color: #ffffff;
+  font-size: 28px !important;
+  margin: 0;
+  margin-bottom: 32px;
+
+}
+
+p.beneficiosub {
+  font-family: 'inter';
+  text-align: left;
+  color: #ffffff;
+  font-size: 28px !important;
+  margin: 0;
+  margin-bottom: 32px;
+
+}
+p.cinesub {
+  font-family: 'inter';
+  text-align: left;
+  color: #ffffff;
+  font-size: 28px !important;
+  margin: 0;
+  margin-bottom: 32px;
+
+}
+
+p.entrevistasub {
+  font-family: 'inter';
+  text-align: left;
+  color: #ffffff;
+  font-size: 28px !important;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+p.valoracionsub {
+  font-family: 'inter';
+  text-align: left;
+  color: #ffffff;
+  font-size: 28px !important;
+  margin: 0;
+  margin-bottom: 32px;
+
+}
+
+/* P FINAL*/
+
+/*//////////////////////////////////*/
+/* Estilos para la ventana modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #121518;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+  color: white;
+}
+
+/* Estilo para el botón deshabilitado */
+.boton-enterate.deshabilitado {
+  
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+/* Estilos para el contenedor principal */
+.entrevista {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Altura deseada del contenedor */
+  background-image: url('../img/instfondo.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Color de texto */
+  margin-bottom: 32px;
+}
+
+.custom-title-container {
+  background-color: #6A6A6A;
+  padding: 10px; /* Ajusta el espaciado según sea necesario */
+  position: relative; /* Establece la posición relativa para que la línea se posicione con respecto a este */
+
+}
+
+.custom-text-container {
+  background-color: #282828;
+  padding: 10px; /* Ajusta el espaciado según sea necesario */
+}
+
+
+.cardintento {
+  background: #282828;
+  width: 20em;
+  color: #fff;
+  position: relative;
+  margin: 20px 2em; /* Margen superior e inferior de 20px */
+  height: 20em; /* Making the card square */
+  box-shadow: 8px 8px 40px #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Alinear elementos en columna para mantener la estructura de la tarjeta */
+}
+
+.cardintento-profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 0; /* Asegúrate de que el margen sea cero */
+}
+
+.cardintento-profile img {
+  width: 100%; /* Ajustar el ancho de la imagen al 100% */
+  height: auto; /* Mantener la relación de aspecto */
+}
+
+.cardintento-img {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0; /* Asegúrate de que el margen sea cero */
+}
+
+.cardintento-img img {
+  width: 100%; /* Ajustar la imagen al ancho del contenedor */
+  height: 100%; /* Ajustar la imagen a la altura del contenedor */
+  object-fit: cover; /* Ajustar la imagen para cubrir todo el contenedor manteniendo la relación de aspecto */
+}
+
+.name {
+  width: 50%; /* Cambiar el ancho a la mitad para dejar espacio para la imagen */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2em;
+  background: #6A6A6A;
+  color: #ffffff;
+  box-shadow: 15px 5px 25px #101010;
+  z-index: 1;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.name, .cardintento-img {
+  width: 100%; /* Ocupar todo el ancho interior de .cardintento */
+}
+
+.cardintento-profile h4 {
+  font-family: 'Archivo', ExtraBold;
+  font-weight: 800;
+  margin: 0;
+}
+.cardintento-profile p {
+  font-family: 'inter';
+  font-weight: 400;
+  margin: 0;
+}
+
+.cardintento-body {
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+  width: 100%;
+  flex-grow: 1; /* Allows the body to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns the paragraph to the bottom */
+}
+
+.cardintento-body p {
+  font-family: 'inter';
+  font-style: italic;
+  font-size: 14px !important;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .swiper-pagination {
+    bottom: 10px; 
+  }
+
+  .swiper-pagination-bullet {
+    width: 16px; 
+    height: 4px; 
+  }
+}
+
+/* Estilos para vista de escritorio */
+@media (min-width: 768px) {
+  .swiper-pagination {
+    bottom: 10px;  /* Ajustar posición de la paginación en vista de escritorio */
+  }
+
+  .swiper-pagination-bullet {
+    width: 16px; 
+    height: 4px; 
+  }
+}
